@@ -1,0 +1,6 @@
+.cards__content {
+  margin: 25px 15px 31px 21px;
+  width: 246px;
+  display: flex;
+  position: relative;
+}

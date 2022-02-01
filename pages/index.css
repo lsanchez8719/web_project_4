@@ -4,9 +4,17 @@
 /* Header*/
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/header/header.css);
+/* profile */
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__container/profile__container.css);
 @import url(../blocks/profile/__image/profile__image.css);
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__role/profile__role.css);
+/* cards */
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__card/cards__card.css);
+@import url(../blocks/cards/__grid/cards__grid.css);
+@import url(../blocks/cards/__content/cards__content.css);
+@import url(../blocks/cards/__title/cards__title.css);
