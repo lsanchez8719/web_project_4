@@ -1,0 +1,12 @@
+.button__like {
+  border: none;
+  width: 21px;
+  height: 19px;
+  padding-left: 26px;
+  align-self: center;
+  background: url(../../../images/like_vector.svg) no-repeat center;
+}
+
+.button__like:hover {
+  opacity: 0.5;
+}
