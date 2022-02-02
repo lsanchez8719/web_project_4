@@ -22,3 +22,6 @@
 /* Like Button */
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/__like_button/button__like_vector.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__author/footer__author.css);
