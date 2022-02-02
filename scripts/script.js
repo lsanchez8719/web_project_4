@@ -1,15 +1,34 @@
+const profile = document.querySelector(".profile"); //+
+const profileInfo = document.querySelector('.profile__info');
+const profileName = profileInfo.querySelector('.profile__name');
+const profileProfession = profileInfo.querySelector('.profile__role');
 
-const openButton = document.querySelector('.button__edit');
-const popup = document.querySelector('.popup');
-const closeButton = popup.querySelector('.button__close');
+const profileForm = document.forms.profileForm;
+const profilePopup = document.querySelector('.popup');
+const editButton = document.querySelector (".profile__button");
+const saveButton = profilePopup.querySelector('.popup__save');
+const closeButton = profilePopup.querySelector('.popup__close');
+let inputName = profilePopup.querySelector('.popup__input_name');
+let inputProfession = profilePopup.querySelector('.popup__input_role');
 
-function toggleForm() {
-  popup.classList.toggle('.popup');
+//functions
+function formLoadUp () {
+  profilePopup.classList.toggle('popup_open');
+  inputName.value = profileName.textContent;
+  inputProfession.value = profileProfession.textContent;
 }
 
-openFormButton.addEventListener('click', toggleForm);
-closeButton.addEventListener('click', toggleForm);
+function closePopup () {
+  profilePopup.classList.remove('popup_open');
+}
 
-//editButton.addEventListener("click", handleEditButtonClick);
-//popup.addEventListener("submit", handleEditFormSubmit);
-//closeButton.addEventListener("click", () => closePopup());
+function formSubmitHandle(event) {
+  profileName.textContent = inputName.value;
+  profileProfession.textContent = inputProfession.value;
+  event.preventDefault();
+  profilePopup.classList.remove('popup_open');
+}
+//Event handlers
+editButton.addEventListener('click', formLoadUp);
+profileForm.addEventListener('submit', formSubmitHandle);
+closeButton.addEventListener('click', closePopup);
