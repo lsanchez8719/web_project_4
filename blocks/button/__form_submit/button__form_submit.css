@@ -1,4 +1,4 @@
-.buttom__form_submit {
+.button__form_submit {
   color: white;
   background-color: black;
   margin: 48px 36px 36.51px;
@@ -10,12 +10,12 @@
   text-align: center;
 }
 
-.buttom__form_submit:hover {
+.button__form_submit:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 640px) {
-  .buttom__form_submit {
+  .button__form_submit {
     margin: 46px 22px 25px;
     padding: 14px 100px;
     font-size: 14px;
