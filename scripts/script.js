@@ -26,7 +26,7 @@ function formSubmitHandle(event) {
   profileName.textContent = inputName.value;
   profileProfession.textContent = inputProfession.value;
   event.preventDefault();
-  profilePopup.classList.remove('popup__open');
+  profilePopup.classList.closePopup('popup__open'); //recheck profilePopup.classList.remove('popup_open'); 
 }
 //Event handlers
 editButton.addEventListener('click', formLoadUp);
