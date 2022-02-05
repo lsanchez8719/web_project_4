@@ -1,8 +1,8 @@
 .profile__role {
   color: #fff;
-  font-family: Inter;
   font-size: 18px;
   font-style: normal;
+  font-weight: 400;
   max-width: 415px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -14,9 +14,5 @@
 @media screen and (max-width: 320px) {
   .profile__role {
     margin: 0 auto;
-    font-style: normal;
-    font-weight: 400;
-    align-items: center;
-    white-space: nowrap;
   }
 }

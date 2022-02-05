@@ -10,15 +10,14 @@
   position: relative;
   }
 
+  @media screen and (max-width: 550px) {
+    .popup__window {
+      margin: auto;
+    }
+  }
   @media screen and (max-width: 320px) {
     .popup__window {
       width: 282px;
       margin: 0 19px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    .popup__window {
-      margin: auto;
     }
   }
