@@ -1,3 +1,5 @@
+/* I have to discuss the bem with the tutor */  
+
 .popup__window {
   /*display: flex; /* display: none; */
   flex-direction: column;
@@ -17,7 +19,6 @@
 
   @media screen and (max-width: 550px) {
     .popup__window {
-      width: 282px;
       margin: auto;
     }
   }
