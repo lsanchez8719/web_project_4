@@ -1,4 +1,4 @@
-.button__close {
+.modal__button-close {
   width: 40px;
   cursor: pointer;
   height: 40px;
@@ -12,12 +12,12 @@
 }
 
 
-.button__close:hover {
+.modal__button-close:hover {
   opacity: 0.5;
 }
 
 @media screen and (max-width: 320px) {
-  .button__close {
+  .modal__button-close {
     width: 26px;
     height: 26px;
   }

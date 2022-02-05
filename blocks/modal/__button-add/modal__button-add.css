@@ -1,25 +1,26 @@
-.button__add {
+.modal__button-add {
   display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 2px;
-  margin-left: auto;
   box-sizing: border-box;
-  cursor: pointer;
   transition: opacity 0.4s;
   width: 150px;
   height: 50px;
   border: 2px solid #fff;
   background-color: transparent;
+  background-image: url(../../../images/plus_vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.button__add:hover {
+.modal__button-add:hover {
   opacity: 60%;
 }
 
 @media screen and (max-width: 720px) {
-  .button__add {
-    margin: auto 19px;
+  .modal__button-add {
+    margin-left: 19px;
+    margin-right: 19px;
     width: 282px;
   }
 }

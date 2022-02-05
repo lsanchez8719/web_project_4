@@ -21,11 +21,11 @@
 
 /* Like Button */
 @import url(../blocks/button/button.css);
-@import url(../blocks/button/__close/button__close.css);
-@import url(../blocks/button/__form_submit/button__form_submit.css);
-@import url(../blocks/button/__add/button__add.css);
-@import url(../blocks/button/__like/button__like.css);
-@import url(../blocks/button/__edit/button__edit.css);
+@import url(../blocks/modal/__button-close/modal__button-close.css);
+@import url(../blocks/modal/__button-submit/modal__button-submit.css);
+@import url(../blocks/modal/__button-add/modal__button-add.css);
+@import url(../blocks/cards/__button-like/cards__button-like.css);
+@import url(../blocks/profile/__button-edit/profile__button-edit.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__author/footer__author.css);

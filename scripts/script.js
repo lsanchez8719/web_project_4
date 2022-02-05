@@ -5,9 +5,9 @@ const profileProfession = profileInfo.querySelector('.profile__role');
 
 const profileForm = document.forms.profileForm;
 const profilePopup = document.querySelector('.popup');
-const editButton = document.querySelector ('.button__edit');
-const saveButton = profilePopup.querySelector('.button__form_submit');
-const closeButton = profilePopup.querySelector('.button__close');
+const editButton = document.querySelector ('.profile__button-edit');
+const saveButton = profilePopup.querySelector('.modal__button-submit');
+const closeButton = profilePopup.querySelector('.modal__button-close');
 let inputName = profilePopup.querySelector('.popup__input_name');
 let inputProfession = profilePopup.querySelector('.popup__input_role');
 

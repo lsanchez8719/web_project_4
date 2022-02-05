@@ -1,4 +1,4 @@
-.button__edit {
+.profile__button-edit {
   align-self: center;
   border: 1px white solid;
   width: 24px;
@@ -7,16 +7,17 @@
   box-sizing: border-box;
   cursor: pointer;
   display: block;
+  margin-right: auto;
   margin-left: 18px;
   background: url(../../../images/vector_pen.svg) no-repeat center;
 }
 
-.button__edit:hover {
+.profile__button-edit:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 320px) {
-  .button__edit {
+  .profile__button-edit {
     width: 18px;
     height: 18px;
   }
