@@ -5,4 +5,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 0; 
 }
+  /* i wasnt sure if my entry was accurate acording to your comment  */
+/* padding: 0;  The title on the card shouldn't be centered: http://joxi.ru/v29gb6bF4jagdr. 
+Right and left paddings of this container should be equal. */

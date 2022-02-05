@@ -5,24 +5,22 @@
   position: relative;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 36.25px;
   align-content: center;
   display: flex;
   align-items: center;
+  margin-top: 36.25px;
 }
+
+/* Do not change*/
 
 @media screen and (max-width: 720px) {
   .profile {
-    margin: 0;
     flex-direction: column;
-    margin: 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .profile {
-    margin: 0;
-    padding-top: 0;
-    flex-direction: column;
+    margin-top: 38.25px;
   }
 }

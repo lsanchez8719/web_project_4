@@ -7,6 +7,7 @@
   box-sizing: border-box;
   cursor: pointer;
   display: block;
+  margin-left: 18px;
   background: url(../../../images/vector_pen.svg) no-repeat center;
 }
 

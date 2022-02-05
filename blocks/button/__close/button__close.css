@@ -1,9 +1,14 @@
 .button__close {
   width: 40px;
+  cursor: pointer;
   height: 40px;
   position: absolute;
   background-size: 100%;
   top: -10%;
   right: -8%;
   background: url(../../../images/Close\ Icon.svg);
+}
+
+.button__close:hover {
+  opacity: 0.5;
 }

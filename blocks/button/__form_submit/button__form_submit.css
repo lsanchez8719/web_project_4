@@ -8,6 +8,7 @@
   line-height: 1.2;
   border-radius: 2px;
   text-align: center;
+  cursor: pointer;
 }
 
 .button__form_submit:hover {

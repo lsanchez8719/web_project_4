@@ -1,10 +1,6 @@
 .profile__container {
   display: flex;
   justify-content: space-between;
-}
-
-@media screen and (max-width: 320px) {
-  .profile__container {
-    text-align: center;
-  }
+  margin: 0 auto;
+  padding-left: 3.75px;
 }
