@@ -21,8 +21,6 @@
 
 /* Like Button */
 @import url(../blocks/button/button.css);
-@import url(../blocks/modal/__button-close/modal__button-close.css);
-@import url(../blocks/modal/__button-submit/modal__button-submit.css);
 @import url(../blocks/profile/__button-add/profile__button-add.css);
 @import url(../blocks/cards/__button-like/cards__button-like.css);
 @import url(../blocks/profile/__button-edit/profile__button-edit.css);
@@ -37,3 +35,5 @@
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__open/popup__open.css);
+@import url(../blocks/popup/__button-close/popup__button-close.css);
+@import url(../blocks/popup/__button-submit/popup__button-submit.css);
