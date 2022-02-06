@@ -1,26 +1,29 @@
 .profile {
-  max-width: 880px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: center;
   display: flex;
   align-items: center;
-  margin-top: 36.25px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 36px;
+  max-width: 880px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 /* Do not change*/
 
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 650px) {
   .profile {
     flex-direction: column;
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .profile {
-    margin-top: 38.25px;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
   }
 }
+
