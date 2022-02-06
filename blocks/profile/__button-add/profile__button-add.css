@@ -1,4 +1,4 @@
-.modal__button-add {
+.profile__button-add {
   cursor: pointer;
   transition: opacity 0.3s;
   width: 150px;
@@ -15,12 +15,12 @@
   background-position: center;
 }
 
-.modal__button-add:hover {
+.profile__button-add:hover {
   opacity: 60%;
 }
 
 @media screen and (max-width: 320px) {
-  .modal__button-add {
+  .profile__button-add {
     margin-left: 19px;
     margin-right: 19px;
     width: 282px;

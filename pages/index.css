@@ -23,7 +23,7 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/modal/__button-close/modal__button-close.css);
 @import url(../blocks/modal/__button-submit/modal__button-submit.css);
-@import url(../blocks/modal/__button-add/modal__button-add.css);
+@import url(../blocks/profile/__button-add/profile__button-add.css);
 @import url(../blocks/cards/__button-like/cards__button-like.css);
 @import url(../blocks/profile/__button-edit/profile__button-edit.css);
 
