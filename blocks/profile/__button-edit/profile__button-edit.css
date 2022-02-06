@@ -1,15 +1,15 @@
 .profile__button-edit {
-  align-self: center;
   border: 1px white solid;
   width: 24px;
   height: 24px;
+  align-self: center;
   background-size: 10px 10px;
   box-sizing: border-box;
   cursor: pointer;
+  background: url(../../../images/vector_pen.svg) no-repeat center;
   display: block;
   margin-right: auto;
-  margin-left: 18px;
-  background: url(../../../images/vector_pen.svg) no-repeat center;
+  
 }
 
 .profile__button-edit:hover {
