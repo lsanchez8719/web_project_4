@@ -5,19 +5,14 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffff;
-  width: 430px;
   border-radius: 10px;
   position: relative;
+  width: 100%;
+  max-width: 430px;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 890px) {
     .popup__window {
-      margin: auto;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .popup__window {
-      width: 282px;
-      margin: 0 19px;
+      max-width: 282px;
     }
   }
