@@ -1,5 +1,4 @@
 .profile__name {
-  margin: 0 0 0 29px;
   max-width: 373px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -9,11 +8,11 @@
 
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 890px) {
   .profile__name {
     align-items: center;
     font-size: 22px;
-  justify-content: center;
-    min-width: 196px;
+    justify-content: center;
+    max-width: 196px;
   }
 }
