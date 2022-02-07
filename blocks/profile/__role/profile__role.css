@@ -3,11 +3,11 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  max-width: 415px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 375px;
+  margin-top: 16px;
 }
 
 /*  recheck padding between name role and container  */
