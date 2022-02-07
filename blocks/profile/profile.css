@@ -12,18 +12,13 @@
 /* Do not change*/
 
 
-@media screen and (max-width: 650px) {
-  .profile {
+@media screen and (max-width: 620px) {
+  .profile{
     flex-direction: column;
-    margin: 0;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .profile {
-    flex-direction: column;
-    margin: 0;
-    padding-top: 0;
-  }
-}
 
