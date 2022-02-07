@@ -8,8 +8,8 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 375px;
+  margin-top: 16px;
 }
-
 /*  recheck padding between name role and container  */
 
 @media screen and (max-width: 880px) {
@@ -17,7 +17,5 @@
     text-align: center;
     max-width: 282px;
     font-size: 14px;
-    margin-top: 14px;
-    
   }
 }
