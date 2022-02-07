@@ -1,19 +1,15 @@
 .profile__name {
-  max-width: 373px;
+  display: flex;
+}
+
+/* max-width: 373px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-weight: 500;
   font-size: 42px;
   margin-bottom: 0;
-
-}
-
-@media screen and (max-width: 890px) {
   .profile__name {
-    align-items: center;
-    font-size: 22px;
-    justify-content: center;
-    max-width: 196px;
+align-items: center;
+justify-content: center;
   }
-}

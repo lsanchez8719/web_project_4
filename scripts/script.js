@@ -1,6 +1,6 @@
 const profile = document.querySelector(".profile"); //+
 const profileInfo = document.querySelector('.profile__info');
-const profileName = profileInfo.querySelector('.profile__name');
+const profileName = profileInfo.querySelector('.profile__name-text');
 const profileProfession = profileInfo.querySelector('.profile__role');
 
 const profileForm = document.forms.profileForm;
