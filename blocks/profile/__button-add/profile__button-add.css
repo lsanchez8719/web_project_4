@@ -6,9 +6,10 @@
   border: 2px solid #fff;
   display: flex;
   justify-content: center;
+  justify-self: flex-end;
   align-items: center;
-  margin-left: auto;
-  box-sizing: border-box;
+  margin-top: 35px;
+  padding: 0;
   background-color: transparent;
   background-image: url(../../../images/plus_vector.svg);
   background-repeat: no-repeat;
@@ -19,9 +20,8 @@
   opacity: 60%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .profile__button-add {
-    margin: 0;
     margin-left: 19px;
     margin-right: 19px;
     width: 282px;
