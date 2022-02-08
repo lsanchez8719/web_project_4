@@ -8,12 +8,14 @@
   justify-content: center;
   justify-self: normal;
   align-items: center;
-  margin: 0;
-  left: 165px;
+  margin: 0; /* new */
+  margin-left: auto; /* new */
+  /* left: 165px;   recheck */
   background-color: transparent;
   background-image: url(../../../images/plus_vector.svg);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 2px;
 }
 
 .profile__button-add:hover {
