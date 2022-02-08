@@ -8,8 +8,8 @@ const profilePopup = document.querySelector('.popup');
 const editButton = document.querySelector ('.profile__button-edit');
 const saveButton = profilePopup.querySelector('.popup__button-submit');
 const closeButton = profilePopup.querySelector('.popup__button-close');
-let inputName = profilePopup.querySelector('.popup__input_type_name');
-let inputProfession = profilePopup.querySelector('.popup__input_type_role');
+let inputName = profilePopup.querySelector('.popup__input_name');
+let inputProfession = profilePopup.querySelector('.popup__input_role');
 
 //functions
 function formLoadUp () {
