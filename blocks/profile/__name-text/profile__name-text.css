@@ -1,7 +1,7 @@
 .profile__name-text {
-  margin-top: 0; /*new */
-  margin-bottom: 10px; /* top or bottom ? */
-  margin-right: 10px;
+  margin-top: 0;
+  /*new */
+  margin-right: 0px;
   max-width: 373px;
   text-overflow: ellipsis;
   white-space: nowrap;

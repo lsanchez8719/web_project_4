@@ -4,6 +4,8 @@
   width: 24px;
   height: 24px;
   display: flex;
+  margin-right: 18px; 
+  margin-top: 0;
   align-self: center;
   box-sizing: border-box;
   background-size: 10px 10px;
