@@ -4,21 +4,20 @@
   position: relative;
   margin: 0 auto;
   padding-top: 36px;
+  padding-right: 0;
   max-width: 880px;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 /* Do not change*/
 
 
-@media screen and (max-width: 880px) {
-  .profile{
+@media screen and (max-width: 890px) {
+  .profile {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-
   }
 }
-
-

@@ -4,8 +4,9 @@
   width: 24px;
   height: 24px;
   display: flex;
-  margin-right: 18px; 
+  margin-left: 18px;
   margin-top: 0;
+  margin-bottom: 0;
   align-self: center;
   box-sizing: border-box;
   background-size: 10px 10px;
@@ -16,10 +17,10 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 890px) {
   .profile__button-edit {
+    margin-left: 10px;
     width: 18px;
     height: 18px;
-    margin: 5px 10px;
   }
 }
