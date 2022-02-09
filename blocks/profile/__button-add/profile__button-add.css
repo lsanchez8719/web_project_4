@@ -8,8 +8,10 @@
   justify-content: center;
   justify-self: normal;
   align-items: center;
-  margin: 0; /* new */
-  margin-left: auto; /* new */
+  margin: 0;
+  /* new */
+  margin-left: auto;
+  /* new */
   /* left: 165px;   recheck */
   background-color: transparent;
   background-image: url(../../../images/plus_vector.svg);

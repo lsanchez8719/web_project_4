@@ -7,10 +7,10 @@
   position: relative;
   width: 100%;
   max-width: 430px;
-  }
+}
 
-  @media screen and (max-width: 890px) {
-    .popup__window {
-      max-width: 282px;
-    }
+@media screen and (max-width: 890px) {
+  .popup__window {
+    max-width: 282px;
   }
+}
