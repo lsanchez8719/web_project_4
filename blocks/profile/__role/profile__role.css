@@ -9,7 +9,9 @@
   overflow: hidden;
   max-width: 375px;
   margin-top: 16px;
+  margin-bottom: 0;  /*new*/
 }
+
 /*  recheck padding between name role and container  */
 
 @media screen and (max-width: 880px) {
