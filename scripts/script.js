@@ -13,21 +13,15 @@ let inputProfession = profilePopup.querySelector('.popup__input_type_role');
 
 //functions
 function formLoadUp () {
-  profilePopup.classList.toggle('popup__open');
+  profilePopup.classList.toggle('popup_opened');
   inputName.value = profileName.textContent;
   inputProfession.value = profileProfession.textContent;
 }
 
 function closePopup () {
-  profilePopup.classList.remove('popup__open');
+  profilePopup.classList.remove('popup_opened');
 }
 
-function formSubmitHandle(event) {
-  profileName.textContent = inputName.value;
-  profileProfession.textContent = inputProfession.value;
-  event.preventDefault();
-  profilePopup.classList.closePopup('popup__open'); //recheck profilePopup.classList.remove('popup_open'); 
-}
 
 function formSubmitHandle(event) {
   profileName.textContent = inputName.value;
@@ -35,6 +29,7 @@ function formSubmitHandle(event) {
   event.preventDefault();
   closePopup();
 }
+
 
 //Event handlers
 editButton.addEventListener('click', formLoadUp);
