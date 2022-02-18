@@ -20,6 +20,7 @@
 @import url(../blocks/cards/__content/cards__content.css);
 @import url(../blocks/cards/__title/cards__title.css);
 @import url(../blocks/cards/__template/cards__template.css);
+
 /* cards-template */
 
 /* Like Button */
@@ -29,8 +30,12 @@
 @import url(../blocks/profile/__button-edit/profile__button-edit.css);
 @import url(../blocks/popup/__button-close/_place_preview/popup__button-close_place_preview.css);
 
+
 @import url(../blocks/footer/footer.css);
+
+/*Delete button*/
 @import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/button/_type/button_type_delete.css);
 
 
 @import url(../blocks/popup/popup.css);
@@ -44,3 +49,4 @@
 @import url(../blocks/popup/_type/_add-card/popup_type_add-card.css);
 @import url(../blocks/popup/_type/_preview-picture/popup_type_preview_picture.css);
 @import url(../blocks/popup/__credits/popup__credits.css);
+@import url(../blocks/cards/__button-like/_active/cards__button-like_active.css);

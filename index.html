@@ -24,20 +24,23 @@
         <p class="profile__role">Explorer</p>
       </div>
       <div class="profile__info">
-        <button type="button" class="button profile__button-add" aria-label="add">
+        <button type="button" class="button profile__button-add popup__new-card_link-add" aria-label="add">
         </button>
       </div>
     </section>
     <section class="cards">
       <ul class="cards__grid">
-        <li class="cards__card">
+        <!-- <li class="cards__card">
+          <button type="button" class="button button_type_delete" aria-label="delete"></button>
           <img class="cards__image" src="./images/yosemite_valley.png" alt="yosemite-alley-image">
+          
           <div class="cards__content">
             <h2 class="cards__title">Yosemite Valley</h2>
-            <button type="button" class="button cards__button-like" aria-label="like"></button>
+            <button type="button" class="button  cards__button-like" aria-label="like"></button>
           </div>
         </li>
         <li class="cards__card">
+          <button type="button" class="button button_type_delete" aria-label="delete"></button>
           <img class="cards__image" src="./images/lake_louise.png" alt="lake-louise">
           <div class="cards__content">
             <h2 class="cards__title">Lake Louise</h2>
@@ -45,6 +48,7 @@
           </div>
         </li>
         <li class="cards__card">
+          <button type="button" class="button button_type_delete" aria-label="delete"></button>
           <img class="cards__image" src="./images/bald_mountains.png" alt="bald-mountains-image">
           <div class="cards__content">
             <h2 class="cards__title">Bald Mountains</h2>
@@ -52,6 +56,7 @@
           </div>
         </li>
         <li class="cards__card">
+          <button type="button" class="button button_type_delete" aria-label="delete"></button>
           <img class="cards__image" src="./images/latemar.png" alt="latemar-image">
           <div class="cards__content">
             <h2 class="cards__title">Latemar</h2>
@@ -59,6 +64,7 @@
           </div>
         </li>
         <li class="cards__card">
+          <button type="button" class="button button_type_delete" aria-label="delete"></button>
           <img class="cards__image" src="./images/vanoise_national.png" alt="vanoise-national-park-image">
           <div class="cards__content">
             <h2 class="cards__title">Vanoise National Park</h2>
@@ -66,12 +72,13 @@
           </div>
         </li>
         <li class="cards__card">
+          <button type="button" class="button button_type_delete" aria-label="delete"></button>
           <img class="cards__image" src="./images/lago_di_braies.png" alt="lago-di-Braies-image">
           <div class="cards__content">
             <h2 class="cards__title">Lago di Braies</h2>
             <button type="button" class="button cards__button-like" aria-label="like"></button>
           </div>
-        </li>
+        </li> -->
       </ul>
     </section>
   </main>
@@ -92,11 +99,12 @@
   </div>
   <div class="popup popup_type_add-card">
     <div class="popup__window">
-      <button type="button" class="button popup__button-close" aria-label="close"></button>
-      <h2 class="popup__title">New place</h2>
-      <form class="popup__form" name="">
-        <input type="text" class="popup__input" name="" placeholder="Title">
-        <input type="url" class="popup__input" name="" placeholder="Image link">
+      <button type="button" class="button popup__button-close popup__close-button_place_card"
+        aria-label="close"></button>
+      <h2 class="popup__title form__input_type_image-title">New place</h2>
+      <form class="popup__form popup_form_add-card" name="">
+        <input type="text" class="popup__input popup__input_type_image-title" name="" placeholder="Title">
+        <input type="url" class="popup__input popup__input_type_image-link" name="" placeholder="Image link">
         <button type="submit" class="button popup__button-submit" aria-label="submit">Create</button>
       </form>
     </div>
@@ -108,15 +116,13 @@
       <p class="popup__credits"></p>
     </div>
   </div>
-  <template class="card__template">
+  <template id="card__template">
     <li class="cards__card">
-      <button type="button" class="button" aria-label="delete">
-        <img src="" alt="delete" class="button button_type_delete"></button>
-      <!--class bucket image-->
+      <button type="button" class="button button_type_delete" aria-label="delete"></button>
       <img src=" " alt="" class="cards__image">
       <div class="cards__content">
         <h2 class="cards__title"></h2>
-        <button type="button" class="button" aria-label="like"></button>
+        <button type="button" class="button cards__button-like" aria-label="like"></button>
       </div>
     </li>
   </template>
