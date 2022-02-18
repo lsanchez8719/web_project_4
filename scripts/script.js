@@ -150,11 +150,11 @@ function renderInitialCards() {
 
 /*Popup ADD card functionality*/
 
-const newCardForm = document.querySelector(".popup_form_add-card");
+const newCardForm = document.querySelector(".popup_form_add_card");
 const newCardPopup = document.querySelector(".popup_type_add-card");
-const newCardButtonElement = document.querySelector(".popup__new-card_link-add");
+const newCardButtonElement = document.querySelector(".popup__new_card_link_add");
 const newCardPopupCloseButtonElement = document.querySelector(
-  ".popup__close-button_place_card"
+  ".popup__close_button_place_card"
 );
 const userInputImageTitle = document.querySelector(
   ".popup__input_type_image-title"
