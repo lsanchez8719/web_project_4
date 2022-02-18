@@ -1,8 +1,4 @@
-.popup_type_add-card{
-display: flex;
-max-width: 430px;
-max-height: 330px;
-background-color: white;
-border-radius: 10px;
-width: 100%;
-}
+ .popup_type_add-card{
+  /* visibility: visible;*/
+   display: flex; 
+ }
