@@ -152,17 +152,17 @@ function renderInitialCards() {
 
 /*Popup ADD card functionality*/
 
-const newCardForm = document.querySelector(".popup_form_type_add-card");
+const newCardForm = document.querySelector(".popup__form_type_add_card");
 const newCardPopup = document.querySelector(".popup_type_add-card");
-const newCardButtonElement = document.querySelector(".profile_card-add");
+const newCardButtonElement = document.querySelector(".profile__card_add");
 const newCardPopupCloseButtonElement = document.querySelector(
   ".popup__button-close"
 );
 const userInputImageTitle = document.querySelector(
-  ".popup__input__type-title"
+  ".popup__input_type_title"
 );
 const userInputImageLink = document.querySelector(
-  ".popup__input__type-link"
+  ".popup__input_type_link"
 );
 function handleNewCardButtonClick() {
   console.log("something");
