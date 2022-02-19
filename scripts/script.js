@@ -148,6 +148,8 @@ function renderInitialCards() {
 
 
 
+
+
 /*Popup ADD card functionality*/
 
 const newCardForm = document.querySelector(".form__add-card");
@@ -186,4 +188,18 @@ newCardPopupCloseButtonElement.addEventListener("mousedown", () =>
 newCardButtonElement.addEventListener("mousedown", handleNewCardButtonClick);
 newCardForm.addEventListener("submit", handleNewCardFormSubmit);
 
-renderInitialCards();
+
+  renderInitialCards();
+
+
+const popUpImagePreview = document.querySelector(".popup_type_preview-card");
+const imagePreview = document.querySelector(".popup__preview-image");
+const imagePreviewTitle = document.querySelector(".popup__preview-title");
+
+function handleCardImageClick (event) {
+  imagePreview.src = event.target.src;
+  imagePreview.alt = event.target.alt;
+  imagePreviewTitle.textContent = event.target.alt;
+  openPopup(popUpImagePreview);
+
+}

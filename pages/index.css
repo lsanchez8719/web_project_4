@@ -29,6 +29,8 @@
 @import url(../blocks/cards/__button-like/cards__button-like.css);
 @import url(../blocks/profile/__button-edit/profile__button-edit.css);
 @import url(../blocks/popup/__button-close/_place_preview/popup__button-close_place_preview.css);
+@import url(../blocks/popup/__preview-container/popup__preview-container.css);
+@import url(../blocks/popup/__preview-credits/popup__preview-credits.css);
 
 
 @import url(../blocks/footer/footer.css);
@@ -50,3 +52,6 @@
 @import url(../blocks/popup/_type/_preview-picture/popup_type_preview_picture.css);
 @import url(../blocks/popup/__credits/popup__credits.css);
 @import url(../blocks/cards/__button-like/_active/cards__button-like_active.css);
+@import url(../blocks/button/_type/button_type_preview-card.css);
+@import url(../blocks/button/_type/button_type_close-preview.css);
+@import url(../blocks/popup/__preview-image/popup__preview-image.css);

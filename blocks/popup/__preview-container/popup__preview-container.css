@@ -1,0 +1,7 @@
+.popup__preview-container{
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  padding: 0;
+  width: fit-content;
+}
