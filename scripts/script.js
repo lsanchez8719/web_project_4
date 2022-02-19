@@ -152,9 +152,9 @@ function renderInitialCards() {
 
 /*Popup ADD card functionality*/
 
-const newCardForm = document.querySelector(".popup__form_type_add_card");
+const newCardForm = document.querySelector(".popup__form_type_add-card");
 const newCardPopup = document.querySelector(".popup_type_add-card");
-const newCardButtonElement = document.querySelector(".profile__card_add");
+const newCardButtonElement = document.querySelector(".profile__card-add");
 const newCardPopupCloseButtonElement = document.querySelector(
   ".popup__button-close"
 );
