@@ -1,14 +1,18 @@
 
-const profile = document.querySelector(".profile");
 const profileInfo = document.querySelector('.profile__info');
 const profileName = profileInfo.querySelector('.profile__name-text');
 const profileProfession = profileInfo.querySelector('.profile__role');
 
-const profileForm = document.forms.profileForm;
+//const profileForm = document.forms.profileForm;
 const profilePopup = document.querySelector('.popup');
 const editButton = document.querySelector('.profile__button-edit');
-const saveButton = profilePopup.querySelector('.popup__button-submit');
+//const saveButton = profilePopup.querySelector('.popup__button-submit');
+
+//Now there are three popups on the page and each one has it's own closeButton. 
+//Make sure you choose a name for the variable that reflects its purpose. 
+//And don't forget that every popup should be closable, including popUpImagePreview
 const closeButton = profilePopup.querySelector('.popup__button-close');
+
 let inputName = profilePopup.querySelector('.popup__input_type_name');
 let inputProfession = profilePopup.querySelector('.popup__input_type_role');
 
@@ -56,20 +60,17 @@ const cardTemplateElement = document.querySelector("#card__template"); // select
 /* Function to make card. */
 
 
+
+
+
 function createCard(card) {
   // get card template and make a copy
-  const cardElement = cardTemplateElement.content
-    .querySelector(".cards__card")
-    .cloneNode(true);
+  const cardElement = cardTemplateElement.content.querySelector(".cards__card").cloneNode(true);
   // select card element parts
   const cardTitleElement = cardElement.querySelector(".cards__title");
   const cardImageElement = cardElement.querySelector(".cards__image");
-  const cardLikeButtonElement = cardElement.querySelector(
-    ".cards__button-like"
-  );
-  const cardTrashButtonElement = cardElement.querySelector(
-    ".button_type_delete"
-  );
+  const cardLikeButtonElement = cardElement.querySelector(".cards__button-like");
+  const cardTrashButtonElement = cardElement.querySelector(".button_type_delete");
   // add card information
   cardTitleElement.textContent = card.name;
   cardImageElement.src = card.link;
