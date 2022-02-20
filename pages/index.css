@@ -30,7 +30,7 @@
 @import url(../blocks/profile/__button-edit/profile__button-edit.css);
 @import url(../blocks/popup/__button-close/_place_preview/popup__button-close_place_preview.css);
 @import url(../blocks/popup/__preview-container/popup__preview-container.css);
-@import url(../blocks/popup/__preview-credits/popup__preview-credits.css);
+@import url(../blocks/popup/__preview-title/popup__preview-title.css);
 
 
 @import url(../blocks/footer/footer.css);

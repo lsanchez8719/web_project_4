@@ -116,7 +116,7 @@ function createCard(card) {
 
 
 function handleLikeButtonClick(event) {
-  //console.log("something");
+ 
   event.target.classList.toggle("cards__button-like_active");
 }
 
@@ -165,7 +165,7 @@ const userInputImageLink = document.querySelector(
   ".popup__input_type_link"
 );
 function handleNewCardButtonClick() {
-  console.log("something");
+ 
   newCardForm.reset();
   formLoadUp(newCardPopup);
 }
