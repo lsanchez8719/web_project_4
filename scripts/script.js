@@ -19,21 +19,18 @@ let inputProfession = profilePopup.querySelector('.popup__input_type_role');
 
 
 //functions
+//must have variable
+//const popupForm =document.querySelector('profileForm');
+
 function handleEditButtonClick() {
   inputName.value = profileName.textContent;
   inputProfession.value = profileProfession.textContent;
    openPopup(profilePopup);
 }
 
-
 function closePopup() {
-  profilePopup.classList.remove('popup_opened');
+  profilePopup.classList.remove
 }
-
- function openPopup(popupForm) {
-  popupForm.classList.add("popup_opened");
-}
-
 
 function formSubmitHandle(event) {
   profileName.textContent = inputName.value;
@@ -41,7 +38,6 @@ function formSubmitHandle(event) {
   event.preventDefault();
   closePopup();
 }
-
 
 //Event handlers
 editButton.addEventListener('click', formLoadUp);

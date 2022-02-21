@@ -11,3 +11,8 @@
   border: 0;
   /*border: solid 1px red; <---- This not applied*/
 }
+
+.button_type_delete:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
