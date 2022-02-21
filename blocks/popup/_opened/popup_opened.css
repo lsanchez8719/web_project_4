@@ -2,4 +2,8 @@
   display: flex;
   /*display:block;*/
   /*visibility: visible;*/
+  transition: visibility 1s, opacity 1s;
+  visibility: hidden;
+  opacity: 0
+}
 }

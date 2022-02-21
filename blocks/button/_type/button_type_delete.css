@@ -9,7 +9,6 @@
   transition: opacity 0.4s;
   padding: 0;
   border: 0;
-  /*border: solid 1px red; <---- This not applied*/
 }
 
 .button_type_delete:hover {
