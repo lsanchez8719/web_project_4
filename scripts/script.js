@@ -16,7 +16,10 @@ const closeButton = profilePopup.querySelector('.popup__button-close');
 let inputName = profilePopup.querySelector('.popup__input_type_name');
 let inputProfession = profilePopup.querySelector('.popup__input_type_role');
 
+
+
 //functions
+
 function formLoadUp() {
   profilePopup.classList.toggle('popup_opened');
   inputName.value = profileName.textContent;
@@ -66,7 +69,6 @@ const cardTemplateElement = document.querySelector("#card__template"); // select
 function createCard(card) {
   // get card template and make a copy
   const cardElement = cardTemplateElement.content.querySelector(".cards__card").cloneNode(true);
-  // select card element parts
   const cardTitleElement = cardElement.querySelector(".cards__title");
   const cardImageElement = cardElement.querySelector(".cards__image");
   const cardLikeButtonElement = cardElement.querySelector(".cards__button-like");
@@ -78,14 +80,14 @@ function createCard(card) {
   // add event listeners
   cardLikeButtonElement.addEventListener("mousedown", handleLikeButtonClick);
   cardTrashButtonElement.addEventListener("mousedown", handleTrashButtonClick);
-  //cardImageElement.addEventListener("mousedown", handleCardImageClick);
+  cardImageElement.addEventListener("mousedown", handleCardImageClick);
   // return card
   return cardElement;
 }
 
 
 /* Like button functionality   */
-/* Function to handle LIKE button click. */
+
 
 
 function handleLikeButtonClick(event) {
@@ -168,6 +170,7 @@ newCardForm.addEventListener("submit", handleNewCardFormSubmit);
 const popUpImagePreview = document.querySelector(".popup_type_preview-card");
 const imagePreview = document.querySelector(".popup__preview-image");
 const imagePreviewTitle = document.querySelector(".popup__preview-title");
+const imagePreviewCloseButton = document.querySelector('.popup__button-close');
 
 function handleCardImageClick (event) {
   imagePreview.src = event.target.src;
