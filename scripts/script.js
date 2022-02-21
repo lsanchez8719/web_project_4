@@ -19,15 +19,19 @@ let inputProfession = profilePopup.querySelector('.popup__input_type_role');
 
 
 //functions
-
-function formLoadUp() {
-  profilePopup.classList.toggle('popup_opened');
+function handleEditButtonClick() {
   inputName.value = profileName.textContent;
   inputProfession.value = profileProfession.textContent;
+   openPopup(profilePopup);
 }
+
 
 function closePopup() {
   profilePopup.classList.remove('popup_opened');
+}
+
+ function openPopup(popupForm) {
+  popupForm.classList.add("popup_opened");
 }
 
 
@@ -43,11 +47,6 @@ function formSubmitHandle(event) {
 editButton.addEventListener('click', formLoadUp);
 profileForm.addEventListener('submit', formSubmitHandle);
 closeButton.addEventListener('click', closePopup);
-
-
-
-
-
 
 
 /* Cards initialization variables */
