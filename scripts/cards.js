@@ -1,6 +1,4 @@
 /* Six initial cards  */
-
-
 const initialCards = [
   {
     name: "Yosemite Valley",

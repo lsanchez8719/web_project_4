@@ -30,66 +30,18 @@
     </section>
     <section class="cards">
       <ul class="cards__grid">
-        <!-- <li class="cards__card">
-          <button type="button" class="button button_type_delete" aria-label="delete"></button>
-          <img class="cards__image" src="./images/yosemite_valley.png" alt="yosemite-alley-image">
-          
-          <div class="cards__content">
-            <h2 class="cards__title">Yosemite Valley</h2>
-            <button type="button" class="button  cards__button-like" aria-label="like"></button>
-          </div>
-        </li>
-        <li class="cards__card">
-          <button type="button" class="button button_type_delete" aria-label="delete"></button>
-          <img class="cards__image" src="./images/lake_louise.png" alt="lake-louise">
-          <div class="cards__content">
-            <h2 class="cards__title">Lake Louise</h2>
-            <button type="button" class="button cards__button-like" aria-label="like"></button>
-          </div>
-        </li>
-        <li class="cards__card">
-          <button type="button" class="button button_type_delete" aria-label="delete"></button>
-          <img class="cards__image" src="./images/bald_mountains.png" alt="bald-mountains-image">
-          <div class="cards__content">
-            <h2 class="cards__title">Bald Mountains</h2>
-            <button type="button" class="button cards__button-like" aria-label="like"></button>
-          </div>
-        </li>
-        <li class="cards__card">
-          <button type="button" class="button button_type_delete" aria-label="delete"></button>
-          <img class="cards__image" src="./images/latemar.png" alt="latemar-image">
-          <div class="cards__content">
-            <h2 class="cards__title">Latemar</h2>
-            <button type="button" class="button cards__button-like" aria-label="like"></button>
-          </div>
-        </li>
-        <li class="cards__card">
-          <button type="button" class="button button_type_delete" aria-label="delete"></button>
-          <img class="cards__image" src="./images/vanoise_national.png" alt="vanoise-national-park-image">
-          <div class="cards__content">
-            <h2 class="cards__title">Vanoise National Park</h2>
-            <button type="button" class="button cards__button-like" aria-label="like"></button>
-          </div>
-        </li>
-        <li class="cards__card">
-          <button type="button" class="button button_type_delete" aria-label="delete"></button>
-          <img class="cards__image" src="./images/lago_di_braies.png" alt="lago-di-Braies-image">
-          <div class="cards__content">
-            <h2 class="cards__title">Lago di Braies</h2>
-            <button type="button" class="button cards__button-like" aria-label="like"></button>
-          </div>
-        </li> -->
+
       </ul>
     </section>
   </main>
   <footer class="footer">
     <p class="footer__author">&copy; 2021 Around The U.S.</p>
   </footer>
-  <div class="popup">
+  <div class="popup popup_type_profile">
     <div class="popup__window ">
-      <button type="button" class="button popup__button-close" aria-label="close"></button>
+      <button type="button" class="button popup__button-close button_location_profile" aria-label="close"></button>
       <h2 class="popup__title">Edit profile</h2>
-      <form class="popup__form" name="profileForm">
+      <form class="popup__form popup_form_type_profile" name="profileForm">
         <input type="text" class="popup__input popup__input_type_name" name="profileNameInput"
           placeholder="Jacques Cousteau">
         <input type="text" class="popup__input popup__input_type_role" name="profileRoleInput" placeholder="Explorer">
@@ -99,7 +51,7 @@
   </div>
   <div class="popup popup_type_add-card">
     <div class="popup__window">
-      <button type="button" class="button popup__button-close" aria-label="close"></button>
+      <button type="button" class="button popup__button-close button_location_add-card" aria-label="close"></button>
       <h2 class="popup__title popup__input-title">New place</h2>
       <form class="popup__form popup__form_type_add-card">
         <input type="text" class="popup__input popup__input_type_title" placeholder="Title">
@@ -110,7 +62,8 @@
   </div>
   <section class="popup popup_type_preview-card">
     <div class="popup__window popup__preview-container">
-      <button class="button button_type_close button_type_preview-card" type="button" aria-label="close"></button>
+      <button class="button button_type_close button_type_preview-card button_location_preview" type="button"
+        aria-label="close"></button>
       <img class="popup__preview-image" src="#" alt="#" />
       <p class="popup__preview-title"></p>
     </div>

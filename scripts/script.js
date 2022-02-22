@@ -1,27 +1,30 @@
-
-const profileInfo = document.querySelector('.profile__info');
-const profileName = profileInfo.querySelector('.profile__name-text');
-const profileProfession = profileInfo.querySelector('.profile__role');
+const profileName = document.querySelector('.profile__name-text');
+const profileProfession = document.querySelector('.profile__role');
 
 //const profileForm = document.forms.profileForm;
-const profilePopup = document.querySelector('.popup');
+const profilePopup = document.querySelector('.popup_type_profile');
+const addCardPopup = document.querySelector('.popup_type_add-card');
+const previewPopup = document.querySelector('.popup_type_preview-card');
+
+
 const editButton = document.querySelector('.profile__button-edit');
 //const saveButton = profilePopup.querySelector('.popup__button-submit');
 
-//Now there are three popups on the page and each one has it's own closeButton. 
-//Make sure you choose a name for the variable that reflects its purpose. 
-//And don't forget that every popup should be closable, including popUpImagePreview
-const closeButton = profilePopup.querySelector('.popup__button-close');
 
-let inputName = profilePopup.querySelector('.popup__input_type_name');
-let inputProfession = profilePopup.querySelector('.popup__input_type_role');
+const inputName = document.querySelector('.popup__input_type_name');
+const inputProfession = document.querySelector('.popup__input_type_role');
+
+// buttonlocation
+const buttonCloseProfile = document.querySelector('.button_location_profile');
+const buttonCloseAddCard = document.querySelector('.button_location_add-card');
+const buttonClosePreview = document.querySelector('.button_location_preview');
+
+// const popupForm = document.querySelector('.profileForm');
+const formProfile = document.querySelector('.popup_form_type_profile');
+const formAddCard = document.querySelector('.popup__form_type_add-card');
 
 
-
-//functions
-//must have variable
-const popupForm =document.querySelector('profileForm');
-
+//universal pop up function 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
 }
@@ -35,26 +38,38 @@ function handleEditButtonClick() {
    openPopup(profilePopup);
 }
 
-function closePopup() {
-  profilePopup.classList.remove
-}
-
 function formSubmitHandle(event) {
   profileName.textContent = inputName.value;
   profileProfession.textContent = inputProfession.value;
   event.preventDefault();
-  closePopup();
+  closePopup(profilePopup);
 }
 
 //Event handlers
 
 editButton.addEventListener("click", handleEditButtonClick);
-profileForm.addEventListener('submit', formSubmitHandle);
-closeButton.addEventListener('click', closePopup);
+formProfile.addEventListener('submit', formSubmitHandle);
 
-
+buttonCloseProfile.addEventListener("click", () => closePopup(profilePopup));
+buttonCloseAddCard.addEventListener("click", () => closePopup(addCardPopup));
+buttonClosePreview.addEventListener("click", () => closePopup(previewPopup));
 /* Cards initialization variables */
 
+
+
+
+const imagePreview = document.querySelector(".popup__preview-image");
+const imagePreviewTitle = document.querySelector(".popup__preview-title");
+
+
+function handleCardImageClick (event) {
+  imagePreview.src = event.target.src;
+  imagePreview.alt = event.target.alt;
+  imagePreviewTitle.textContent = event.target.alt;
+  openPopup(previewPopup);
+
+  
+}
 
 const cardsListElement = document.querySelector(".cards__grid"); // selecting list to fill with cards
 const cardTemplateElement = document.querySelector("#card__template"); // selecting card template element
@@ -64,10 +79,6 @@ const cardTemplateElement = document.querySelector("#card__template"); // select
 
 
 /* Function to make card. */
-
-
-
-
 
 function createCard(card) {
   // get card template and make a copy
@@ -81,9 +92,11 @@ function createCard(card) {
   cardImageElement.src = card.link;
   cardImageElement.alt = card.name;
   // add event listeners
-  cardLikeButtonElement.addEventListener("mousedown", handleLikeButtonClick);
-  cardTrashButtonElement.addEventListener("mousedown", handleTrashButtonClick);
-  cardImageElement.addEventListener("mousedown", handleCardImageClick);
+  cardLikeButtonElement.addEventListener("click", handleLikeButtonClick);
+  cardTrashButtonElement.addEventListener("click", handleTrashButtonClick);
+  cardImageElement.addEventListener("click", function () {console.log("hello")})
+ 
+  
   // return card
   return cardElement;
 }
@@ -145,7 +158,7 @@ const userInputImageLink = document.querySelector(
 function handleNewCardButtonClick() {
  
   newCardForm.reset();
-  formLoadUp(newCardPopup);
+  // formLoadUp(newCardPopup);
 }
 
 function handleNewCardFormSubmit(evt) {
@@ -170,15 +183,3 @@ newCardForm.addEventListener("submit", handleNewCardFormSubmit);
   renderInitialCards();
 
 
-const popUpImagePreview = document.querySelector(".popup_type_preview-card");
-const imagePreview = document.querySelector(".popup__preview-image");
-const imagePreviewTitle = document.querySelector(".popup__preview-title");
-const imagePreviewCloseButton = document.querySelector('.popup__button-close');
-
-function handleCardImageClick (event) {
-  imagePreview.src = event.target.src;
-  imagePreview.alt = event.target.alt;
-  imagePreviewTitle.textContent = event.target.alt;
-  openPopup(popUpImagePreview);
-
-}
