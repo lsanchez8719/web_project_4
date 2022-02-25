@@ -1,4 +1,24 @@
 .button_type_preview-card {
-  top: -40px;
-  right: -40px;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  background-size: 100%;
+  top: -10%;
+  right: -8%;
+  background: url(../../../images/close-icon.svg);
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.button_type_preview-card:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 890px) {
+  .button_type_preview-card {
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
 }

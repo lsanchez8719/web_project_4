@@ -1,7 +1,15 @@
-.popup__preview-container{
+.popup__preview-container {
   display: flex;
-  justify-content: center;
-  background: transparent;
-  padding: 0;
-  width: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 0px;
+  width: 100%;
+  max-width: 430px;
+}
+
+@media screen and (max-width: 890px) {
+  .popup__preview-container {
+    max-width: 240px;
+  }
 }
