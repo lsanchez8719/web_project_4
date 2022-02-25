@@ -19,7 +19,7 @@ const buttonCloseAddCard = document.querySelector('.button_location_add-card');
 const buttonClosePreview = document.querySelector('.button_location_preview');
 
 
-const formProfile = document.querySelector('.popup_form_type-profile');
+const formProfile = document.querySelector('.popup_form_profile');
 const formAddCard = document.querySelector('.popup__form_type_add-card');
 
 const imagePreview = document.querySelector('.popup__preview-image');
