@@ -8,8 +8,8 @@
   max-width: 430px;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 560px) {
   .popup__preview-container {
-    max-width: 240px;
+    max-width: 85%;
   }
 }

@@ -1,7 +1,7 @@
 .popup__window_type_preview {
   background-color: transparent;
-  max-width: 75vw;
-  max-height: 75vh;
+  max-width: 100vw;
+  max-height: 100vh;
   width: fit-content;
   opacity: 1;
 }
