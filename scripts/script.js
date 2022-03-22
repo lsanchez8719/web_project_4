@@ -1,7 +1,6 @@
 const profileName = document.querySelector('.profile__name-text');
 const profileProfession = document.querySelector('.profile__role');
 
-//const profileForm = document.forms.profileForm;
 const profilePopup = document.querySelector('.popup_type_profile');
 const addCardPopup = document.querySelector('.popup_type_add-card');
 const previewPopup = document.querySelector('.popup_type_preview-card');
@@ -50,7 +49,7 @@ function handleEditButtonClick() {
   openPopup(profilePopup);
 }
 
-function formSubmitHandle(event) {
+function handleProfileFormSubmit(event) {
   profileName.textContent = inputName.value;
   profileProfession.textContent = inputProfession.value;
   event.preventDefault();
@@ -60,7 +59,7 @@ function formSubmitHandle(event) {
 //Event handlers
 
 editButton.addEventListener("click", () => openPopup(profilePopup));
-formProfile.addEventListener("submit", formSubmitHandle);
+formProfile.addEventListener("submit", handleProfileFormSubmit);
 
 buttonCloseProfile.addEventListener("click", () => closePopup(profilePopup));
 buttonCloseAddCard.addEventListener("click", () => closePopup(addCardPopup));

@@ -9,9 +9,10 @@
   transition: opacity 0.4s;
   padding: 0;
   border: 0;
+  opacity: 0.6;
 }
 
 .button_type_delete:hover {
-  opacity: 0.6;
+  opacity: 1;
   cursor: pointer;
 }
