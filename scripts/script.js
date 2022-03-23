@@ -58,7 +58,7 @@ function handleProfileFormSubmit(event) {
 
 //Event handlers
 
-editButton.addEventListener("click", () => openPopup(profilePopup));
+editButton.addEventListener( "click", handleEditButtonClick);
 formProfile.addEventListener("submit", handleProfileFormSubmit);
 
 buttonCloseProfile.addEventListener("click", () => closePopup(profilePopup));
@@ -135,7 +135,7 @@ function handleNewCardFormSubmit(evt) {
     link: userInputImageLink.value,
   };
   renderCard(card);
-  closePopup(newCardPopup);
+  closePopup(popup);
 }
 
 formAddCard.addEventListener("submit", handleNewCardFormSubmit);
